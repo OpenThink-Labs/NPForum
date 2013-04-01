@@ -102,7 +102,6 @@ function login_saml(&$username, &$password)
             'user_row'  => array('user_id' => ANONYMOUS),
         );
     }
-
     saml_auth_or_redirect();
 
     if ($saml->isAuthenticated()) {
